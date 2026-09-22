@@ -1,5 +1,5 @@
-﻿<div align="center">
- 
+<div align="center">
+
 # 🚀 Pemrograman Dasar — TI-H
 
 <p align="center">
@@ -9,8 +9,6 @@
 </p>
 
 ---
-
-<div align="center">
 
 ## 👋 Selamat Datang!
 
