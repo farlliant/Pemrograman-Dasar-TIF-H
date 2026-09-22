@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Pemrograman Dasar — TI-H
+# 🚀 Pemrograman Dasar — TIF-H
 
 <p align="center">
   <img src="https://img.shields.io/badge/LANGUAGE-JAVA-F89820?style=for-the-badge&labelColor=555555" alt="Java">
@@ -12,7 +12,7 @@
 
 ## 👋 Selamat Datang!
 
-Selamat datang di repository **Pemrograman Dasar TI-H** 🚀
+Selamat datang di repository **Pemrograman Dasar TIF-H** 🚀
 
 Repository ini digunakan sebagai dokumentasi materi, percobaan, implementasi, dan tugas selama kegiatan **Praktikum Pemrograman Dasar**.
 
@@ -43,7 +43,7 @@ Kumpulan soal dan pembahasan tugas praktikum dapat ditemukan pada folder:
 
 ## 🗂️ Struktur Repository
 
-    Pemrograman Dasar - TI-H/
+    Pemrograman Dasar - TIF-H/
     │
     ├── Modul 1/
     │   ├── Output1.java
