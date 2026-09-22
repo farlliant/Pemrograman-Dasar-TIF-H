@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/LANGUAGE-JAVA-F89820?style=for-the-badge&labelColor=555555" alt="Java">
-  <img src="https://img.shields.io/badge/CLASS-TI--H%202026-00A6ED?style=for-the-badge&labelColor=555555" alt="TI-H 2026">
+  <img src="https://img.shields.io/badge/CLASS-TI--H%202026-00A6ED?style=for-the-badge&labelColor=555555" alt="TIF-H 2026">
   <img src="https://img.shields.io/badge/STATUS-LEARNING-55C900?style=for-the-badge&labelColor=555555" alt="Learning">
 </p>
 
