@@ -738,23 +738,11 @@ Susun Trace Table
 
 ---
 
-# Tugas Praktikum
-
-Bagian **Tugas Praktikum** tersedia pada akhir modul.
-
-Namun rincian soal tidak dicantumkan pada dokumen Modul 0 yang tersedia.
-
-👉 [Tugas Praktikum](./Tugas-Praktikum)
-
----
-
 # Struktur Folder
 
 ```text
 Modul 0/
-├── README.md
-└── Tugas-Praktikum/
-    └── README.md
+└──  README.md
 ```
 
 ---
