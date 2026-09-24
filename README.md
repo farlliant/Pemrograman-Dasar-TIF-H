@@ -1,10 +1,10 @@
 <div align="center">
-
+ 
 # 🚀 Pemrograman Dasar — TIF-H
 
 <p align="center">
   <img src="https://img.shields.io/badge/LANGUAGE-JAVA-F89820?style=for-the-badge&labelColor=555555" alt="Java">
-  <img src="https://img.shields.io/badge/CLASS-TI--H%202026-00A6ED?style=for-the-badge&labelColor=555555" alt="TIF-H 2026">
+  <img src="https://img.shields.io/badge/CLASS-TIF--H%202026-00A6ED?style=for-the-badge&labelColor=555555" alt="TIF-H 2026">
   <img src="https://img.shields.io/badge/STATUS-LEARNING-55C900?style=for-the-badge&labelColor=555555" alt="Learning">
 </p>
 
@@ -26,7 +26,9 @@ Setiap materi disusun berdasarkan modul praktikum dan ditempatkan pada folder ma
 
 | MODUL | Topik Pembahasan | Status |
 |:---:|---|:---:|
+| **00** | [Computational Thinking dan Algoritma](./Modul%200) | ✅ |
 | **01** | [Program Input, Output, dan Proses](./Modul%201) | ✅ |
+| **02** | [Seleksi Kondisi](./Modul%202) | ✅ |
 
 > ✅ Materi tersedia  
 > ⏳ Materi belum ditambahkan
@@ -35,31 +37,53 @@ Setiap materi disusun berdasarkan modul praktikum dan ditempatkan pada folder ma
 
 ## 💻 Tugas Praktikum
 
-Kumpulan soal dan pembahasan tugas praktikum dapat ditemukan pada folder:
+Kumpulan soal dan pembahasan tugas praktikum dapat ditemukan pada folder masing-masing modul.
 
-👉 **[Tugas Praktikum Modul 1](./Modul%201/TugasPraktikum)**
+| Modul | Tugas Praktikum |
+|:---:|---|
+| **01** | [Tugas Praktikum Modul 1](./Modul%201/TugasPraktikum) |
+| **02** | [Tugas Praktikum Modul 2](./Modul%202/Tugas-Praktikum) |
+
+> Modul 0 berisi materi **Computational Thinking dan Algoritma** tanpa folder tugas praktikum terpisah.
 
 ---
 
 ## 🗂️ Struktur Repository
 
-    Pemrograman Dasar - TIF-H/
-    │
-    ├── Modul 1/
-    │   ├── Output1.java
-    │   ├── Output2.java
-    │   ├── Output3.java
-    │   ├── Output4.java
-    │   ├── Variabel.java
-    │   ├── Input.java
-    │   │
-    │   └── TugasPraktikum/
-    │       ├── README.md
-    │       └── Tugas1.java
-    │
-    └── README.md
+```text
+Pemrograman Dasar - TIF-H/
+│
+├── Modul 0/
+│   └── README.md
+│
+├── Modul 1/
+│   ├── Output1.java
+│   ├── Output2.java
+│   ├── Output3.java
+│   ├── Output4.java
+│   ├── Variabel.java
+│   ├── Input.java
+│   │
+│   └── TugasPraktikum/
+│       ├── README.md
+│       └── Tugas1.java
+│
+├── Modul 2/
+│   ├── README.md
+│   ├── constAss.java
+│   ├── seleksi1.java
+│   ├── seleksi2.java
+│   ├── seleksi3.java
+│   │
+│   └── Tugas-Praktikum/
+│       └── README.md
+│
+└── README.md
+```
 
-Setiap folder modul berisi source code percobaan dan implementasi terkait materi praktikum.
+Setiap folder modul memiliki `README.md` yang berisi penjelasan konsep, percobaan, dan implementasi terkait materi tersebut.
+
+Folder tugas praktikum digunakan untuk menyimpan soal dan dokumentasi tugas. Source code penyelesaian ditambahkan setelah tugas selesai dikerjakan.
 
 ---
 
