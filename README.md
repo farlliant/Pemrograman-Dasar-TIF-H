@@ -29,6 +29,10 @@ Setiap materi disusun berdasarkan modul praktikum dan ditempatkan pada folder ma
 | **00** | [Computational Thinking dan Algoritma](./Modul%200) | ✅ |
 | **01** | [Program Input, Output, dan Proses](./Modul%201) | ✅ |
 | **02** | [Seleksi Kondisi](./Modul%202) | ✅ |
+| **03** | Pengulangan | ⏳ |
+| **04** | Larik (Array) | ⏳ |
+| **05** | Program dengan Menggunakan Method | ⏳ |
+| **06** | Class dan Object | ⏳ |
 
 > ✅ Materi tersedia  
 > ⏳ Materi belum ditambahkan
@@ -43,6 +47,10 @@ Kumpulan soal dan pembahasan tugas praktikum dapat ditemukan pada folder masing-
 |:---:|---|
 | **01** | [Tugas Praktikum Modul 1](./Modul%201/TugasPraktikum) |
 | **02** | [Tugas Praktikum Modul 2](./Modul%202/Tugas-Praktikum) |
+| **03** | Belum tersedia |
+| **04** | Belum tersedia |
+| **05** | Belum tersedia |
+| **06** | Belum tersedia |
 
 > Modul 0 berisi materi **Computational Thinking dan Algoritma** tanpa folder tugas praktikum terpisah.
 
@@ -78,12 +86,44 @@ Pemrograman Dasar - TIF-H/
 │   └── Tugas-Praktikum/
 │       └── README.md
 │
+├── Modul 3/                  ← Pengulangan
+│
+├── Modul 4/                  ← Larik (Array)
+│
+├── Modul 5/                  ← Program dengan Menggunakan Method
+│
+├── Modul 6/                  ← Class dan Object
+│
 └── README.md
 ```
 
-Setiap folder modul memiliki `README.md` yang berisi penjelasan konsep, percobaan, dan implementasi terkait materi tersebut.
+Setiap folder modul yang telah tersedia memiliki dokumentasi materi dan source code percobaan terkait.
 
-Folder tugas praktikum digunakan untuk menyimpan soal dan dokumentasi tugas. Source code penyelesaian ditambahkan setelah tugas selesai dikerjakan.
+Folder tugas praktikum digunakan untuk menyimpan soal dan dokumentasi tugas. Source code penyelesaian dapat ditambahkan setelah tugas selesai dikerjakan.
+
+---
+
+## 🧭 Roadmap Materi
+
+Alur materi Praktikum Pemrograman Dasar pada repository ini:
+
+```text
+Computational Thinking & Algoritma
+                ↓
+     Input, Output & Proses
+                ↓
+        Seleksi Kondisi
+                ↓
+           Pengulangan
+                ↓
+          Larik (Array)
+                ↓
+             Method
+                ↓
+        Class dan Object
+```
+
+Materi disusun secara bertahap mulai dari proses berpikir komputasional dan algoritma hingga implementasi konsep dasar Object-Oriented Programming.
 
 ---
 
