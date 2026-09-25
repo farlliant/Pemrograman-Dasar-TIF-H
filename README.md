@@ -16,7 +16,7 @@ Selamat datang di repository **Pemrograman Dasar TIF-H** 🚀
 
 Repository ini digunakan sebagai dokumentasi materi, percobaan, implementasi, dan tugas selama kegiatan **Praktikum Pemrograman Dasar**.
 
-Setiap materi disusun berdasarkan modul praktikum dan ditempatkan pada folder masing-masing agar mudah dipelajari, dijalankan, dan digunakan kembali sebagai referensi.
+Setiap materi disusun berdasarkan bab praktikum dan ditempatkan pada folder masing-masing agar mudah dipelajari, dijalankan, dan digunakan kembali sebagai referensi.
 
 </div>
 
@@ -24,11 +24,11 @@ Setiap materi disusun berdasarkan modul praktikum dan ditempatkan pada folder ma
 
 ## 📚 Daftar Materi
 
-| MODUL | Topik Pembahasan | Status |
+| BAB | Topik Pembahasan | Status |
 |:---:|---|:---:|
-| **00** | [Computational Thinking dan Algoritma](./Modul%200) | ✅ |
-| **01** | [Program Input, Output, dan Proses](./Modul%201) | ✅ |
-| **02** | [Seleksi Kondisi](./Modul%202) | ✅ |
+| **00** | [Computational Thinking dan Algoritma](./Bab%200) | ✅ |
+| **01** | [Program Input, Output, dan Proses](./Bab%201) | ✅ |
+| **02** | [Seleksi Kondisi](./Bab%202) | ✅ |
 | **03** | Pengulangan | ⏳ |
 | **04** | Larik (Array) | ⏳ |
 | **05** | Program dengan Menggunakan Method | ⏳ |
@@ -41,18 +41,18 @@ Setiap materi disusun berdasarkan modul praktikum dan ditempatkan pada folder ma
 
 ## 💻 Tugas Praktikum
 
-Kumpulan soal dan pembahasan tugas praktikum dapat ditemukan pada folder masing-masing modul.
+Soal dan penyelesaian tugas praktikum tersedia pada folder masing-masing bab.
 
-| Modul | Tugas Praktikum |
-|:---:|---|
-| **01** | [Tugas Praktikum Modul 1](./Modul%201/TugasPraktikum) |
-| **02** | [Tugas Praktikum Modul 2](./Modul%202/Tugas-Praktikum) |
-| **03** | Belum tersedia |
-| **04** | Belum tersedia |
-| **05** | Belum tersedia |
-| **06** | Belum tersedia |
+| Bab | Tugas Praktikum | Status |
+|:---:|---|:---:|
+| **01** | [Tugas Praktikum Bab 1](./Bab%201/TugasPraktikum) | ✅ |
+| **02** | [Tugas Praktikum Bab 2](./Bab%202/Tugas-Praktikum) | ✅ |
+| **03** | Belum tersedia | ⏳ |
+| **04** | Belum tersedia | ⏳ |
+| **05** | Belum tersedia | ⏳ |
+| **06** | Belum tersedia | ⏳ |
 
-> Modul 0 berisi materi **Computational Thinking dan Algoritma** tanpa folder tugas praktikum terpisah.
+> Bab 0 berisi materi **Computational Thinking dan Algoritma** tanpa folder tugas praktikum terpisah.
 
 ---
 
@@ -61,10 +61,11 @@ Kumpulan soal dan pembahasan tugas praktikum dapat ditemukan pada folder masing-
 ```text
 Pemrograman Dasar - TIF-H/
 │
-├── Modul 0/
+├── Bab 0/
 │   └── README.md
 │
-├── Modul 1/
+├── Bab 1/
+│   ├── README.md
 │   ├── Output1.java
 │   ├── Output2.java
 │   ├── Output3.java
@@ -76,7 +77,7 @@ Pemrograman Dasar - TIF-H/
 │       ├── README.md
 │       └── Tugas1.java
 │
-├── Modul 2/
+├── Bab 2/
 │   ├── README.md
 │   ├── constAss.java
 │   ├── seleksi1.java
@@ -84,28 +85,29 @@ Pemrograman Dasar - TIF-H/
 │   ├── seleksi3.java
 │   │
 │   └── Tugas-Praktikum/
-│       └── README.md
+│       ├── README.md
+│       ├── Tugas1.java
+│       ├── Tugas2.java
+│       └── Tugas3.java
 │
-├── Modul 3/                  ← Pengulangan
+├── Bab 3/                    ← Pengulangan
 │
-├── Modul 4/                  ← Larik (Array)
+├── Bab 4/                    ← Larik (Array)
 │
-├── Modul 5/                  ← Program dengan Menggunakan Method
+├── Bab 5/                    ← Program dengan Menggunakan Method
 │
-├── Modul 6/                  ← Class dan Object
+├── Bab 6/                    ← Class dan Object
 │
 └── README.md
 ```
 
-Setiap folder modul yang telah tersedia memiliki dokumentasi materi dan source code percobaan terkait.
+Setiap folder bab yang telah tersedia memiliki `README.md` yang menjelaskan konsep, percobaan, dan implementasi terkait materi tersebut.
 
-Folder tugas praktikum digunakan untuk menyimpan soal dan dokumentasi tugas. Source code penyelesaian dapat ditambahkan setelah tugas selesai dikerjakan.
+Folder tugas praktikum digunakan untuk menyimpan soal, dokumentasi, dan source code penyelesaian tugas.
 
 ---
 
 ## 🧭 Roadmap Materi
-
-Alur materi Praktikum Pemrograman Dasar pada repository ini:
 
 ```text
 Computational Thinking & Algoritma
