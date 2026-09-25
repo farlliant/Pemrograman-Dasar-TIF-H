@@ -1,8 +1,8 @@
 # Tugas Praktikum — Seleksi Kondisi
 
-Tugas ini merupakan bagian dari materi **Seleksi Kondisi**.
+Tugas praktikum ini merupakan bagian dari **Bab 2 — Seleksi Kondisi**.
 
-Materi yang digunakan meliputi:
+Konsep utama yang digunakan:
 
 ```text
 If-Else
@@ -17,7 +17,7 @@ Input dan Output
 
 # Tugas 1 — Perhitungan Bangun Datar
 
-Buatlah program menggunakan metode **switch-case** dengan menu:
+Buat program menggunakan **switch-case** dengan menu:
 
 ```text
 Menu:
@@ -26,13 +26,12 @@ Menu:
 3. menghitung luas dan keliling segitiga
 ```
 
-Program menerima pilihan dari pengguna dan melakukan perhitungan sesuai pilihan tersebut.
+Program menerima pilihan pengguna kemudian melakukan perhitungan sesuai bangun datar yang dipilih.
 
-Contoh:
+Contoh dari modul:
 
 ```text
 Pilihan anda: 3
-
 Masukkan a: 3
 Masukkan b: 4
 Masukkan r: 5
@@ -41,7 +40,7 @@ Keliling segitiga : 12 cm
 Luas segitiga     : 6 cm2
 ```
 
-Jika pengguna memasukkan pilihan yang tidak tersedia:
+Jika pilihan tidak tersedia:
 
 ```text
 Pilihan anda: 10
@@ -51,23 +50,42 @@ Data tak ditemukan, program dihentikan ...
 
 ---
 
-## Ketentuan
+## Implementasi
 
-Program harus:
+Source code:
+
+👉 [Tugas1.java](./Tugas1.java)
+
+Program menggunakan:
 
 ```text
-1. Menggunakan switch-case.
-2. Memiliki tiga pilihan bangun datar.
-3. Menerima input sesuai pilihan pengguna.
-4. Menghitung luas dan keliling.
-5. Menangani pilihan yang tidak tersedia.
+switch
+case
+break
+default
+```
+
+Alurnya:
+
+```text
+Input Pilihan
+     ↓
+   switch
+     |
+     +--> 1 → Persegi Panjang
+     |
+     +--> 2 → Lingkaran
+     |
+     +--> 3 → Segitiga
+     |
+     └--> default → Data tidak ditemukan
 ```
 
 ---
 
 # Tugas 2 — Indeks Massa Tubuh
 
-Buat program untuk menentukan kriteria kegemukan berdasarkan **IMT (Indeks Massa Tubuh)**.
+Program digunakan untuk menentukan kriteria kegemukan menggunakan **IMT (Indeks Massa Tubuh)**.
 
 Rumus:
 
@@ -78,8 +96,8 @@ IMT = b / t²
 dengan:
 
 ```text
-b = berat badan dalam kilogram
-t = tinggi badan dalam meter
+b = berat badan (kg)
+t = tinggi badan (m)
 ```
 
 ---
@@ -93,11 +111,9 @@ t = tinggi badan dalam meter
 | `25 < IMT ≤ 30` | Gemuk |
 | `IMT > 30` | Kegemukan |
 
-Program dibuat menggunakan metode **if-else**.
+Program harus menggunakan **if-else**.
 
----
-
-## Contoh 1
+Contoh:
 
 ```text
 Berat badan (kg) : 45
@@ -106,9 +122,7 @@ Tinggi badan (m) : 1.72
 IMT = 15,21 Termasuk kurus
 ```
 
----
-
-## Contoh 2
+Contoh lainnya:
 
 ```text
 Berat badan (kg) : 85
@@ -119,32 +133,40 @@ IMT = 27,76 Termasuk gemuk
 
 ---
 
-## Ketentuan
+## Implementasi
 
-Program harus:
+Source code:
+
+👉 [Tugas2.java](./Tugas2.java)
+
+Alur:
 
 ```text
-1. Menerima berat badan.
-2. Menerima tinggi badan.
-3. Menghitung IMT.
-4. Menentukan kategori IMT.
-5. Menggunakan if-else.
-6. Menampilkan nilai IMT dan kategorinya.
+Input berat
+     ↓
+Input tinggi
+     ↓
+Hitung IMT
+     ↓
+   if-else
+     |
+     +--> Kurus
+     +--> Normal
+     +--> Gemuk
+     └--> Kegemukan
 ```
 
 ---
 
 # Tugas 3 — Perhitungan Gaji Pegawai
 
-Buat program untuk menghitung total upah pegawai berdasarkan jumlah jam kerja setiap minggu.
-
-Input:
+Program menerima:
 
 ```text
-jumlah jam kerja
+jumlah jam kerja setiap minggu
 ```
 
-Output:
+dan menghasilkan:
 
 ```text
 upah
@@ -155,13 +177,7 @@ total
 
 ---
 
-## Aturan Upah Normal
-
-Batas kerja maksimal:
-
-```text
-60 jam / minggu
-```
+## Aturan Penggajian
 
 Upah normal:
 
@@ -169,27 +185,18 @@ Upah normal:
 Rp5.000 / jam
 ```
 
----
-
-## Aturan Lembur
-
-Jika jam kerja melebihi:
+Batas kerja maksimal:
 
 ```text
-60 jam
+60 jam / minggu
 ```
 
-maka kelebihan jam dihitung sebagai lembur.
-
-Upah lembur:
+Jika jam kerja melebihi 60 jam:
 
 ```text
-Rp6.000 / jam
+kelebihan jam = lembur
+upah lembur   = Rp6.000 / jam
 ```
-
----
-
-## Aturan Denda
 
 Batas kerja minimal:
 
@@ -197,17 +204,15 @@ Batas kerja minimal:
 50 jam / minggu
 ```
 
-Jika jam kerja kurang dari 50 jam, pegawai dikenakan denda:
+Jika jam kerja kurang dari 50 jam:
 
 ```text
-Rp1.000 / jam
+denda = Rp1.000 / jam kekurangan
 ```
-
-untuk setiap kekurangan jam.
 
 ---
 
-## Contoh 1 — Jam Kerja Normal
+## Contoh — 55 Jam
 
 ```text
 Jam kerja : 55
@@ -218,9 +223,7 @@ Denda     = Rp. 0
 Total     = Rp. 275000
 ```
 
----
-
-## Contoh 2 — Lembur
+## Contoh — 70 Jam
 
 ```text
 Jam kerja : 70
@@ -231,9 +234,7 @@ Denda     = Rp. 0
 Total     = Rp. 360000
 ```
 
----
-
-## Contoh 3 — Denda
+## Contoh — 40 Jam
 
 ```text
 Jam kerja : 40
@@ -246,23 +247,73 @@ Total     = Rp. 190000
 
 ---
 
-# Target
+## Implementasi
 
-Program tugas praktikum Modul 2 harus mampu menerapkan:
+Source code:
+
+👉 [Tugas3.java](./Tugas3.java)
+
+Alurnya:
 
 ```text
-Seleksi Kondisi
-If-Else
-Switch-Case
-Operator Perbandingan
-Operator Logika
-Input
-Process
-Output
+Input Jam Kerja
+      ↓
+   > 60 jam?
+   /       \
+ Ya        Tidak
+ |           |
+Lembur    Upah Normal
+             |
+          < 50 jam?
+          /      \
+        Ya       Tidak
+        |
+      Denda
+          \      /
+           \    /
+          Hitung Total
 ```
 
 ---
 
-# Penyelesaian
+# Struktur Folder
 
-File penyelesaian tugas belum disertakan dan akan ditambahkan setelah tugas selesai dikerjakan.
+```text
+Tugas-Praktikum/
+├── README.md
+├── Tugas1.java
+├── Tugas2.java
+└── Tugas3.java
+```
+
+---
+
+# Ringkasan
+
+Tugas Praktikum Bab 2 menerapkan tiga bentuk penggunaan seleksi kondisi:
+
+```text
+Tugas 1
+   ↓
+Switch-Case
+
+Tugas 2
+   ↓
+If-Else
+
+Tugas 3
+   ↓
+If-Else dan Nested If
+```
+
+Ketiga tugas tersebut menerapkan pola dasar:
+
+```text
+Input
+  ↓
+Evaluasi Kondisi
+  ↓
+Process
+  ↓
+Output
+```
