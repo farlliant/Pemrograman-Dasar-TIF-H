@@ -1,8 +1,8 @@
 # 02 — Seleksi Kondisi
 
-Materi ini membahas **seleksi kondisi**, yaitu mekanisme yang memungkinkan program menentukan perintah yang dijalankan berdasarkan kondisi tertentu.
+Bab ini membahas **seleksi kondisi**, yaitu mekanisme yang memungkinkan program menentukan perintah yang dijalankan berdasarkan kondisi tertentu.
 
-Materi ini terdiri dari empat konsep utama:
+Materi utama:
 
 ```text
 Conditional Assignment
@@ -15,20 +15,21 @@ Switch-Case
 
 ## Tujuan Pembelajaran
 
-Setelah mempelajari materi ini, mahasiswa diharapkan mampu:
+Setelah mempelajari bab ini, mahasiswa diharapkan mampu:
 
-- memahami konsep conditional assignment;
-- memahami percabangan menggunakan `if-else`;
-- memahami percabangan bertingkat menggunakan nested if;
-- memahami seleksi kondisi menggunakan `switch-case`.
+- memahami conditional assignment;
+- menggunakan `if-else`;
+- menggunakan percabangan bertingkat atau nested if;
+- menggunakan `switch-case`;
+- menentukan struktur seleksi yang sesuai dengan permasalahan.
 
 ---
 
 # Conditional Assignment
 
-Conditional assignment digunakan untuk memberikan suatu nilai berdasarkan kondisi tertentu.
+Conditional assignment digunakan untuk memberikan sebuah nilai berdasarkan suatu kondisi.
 
-Bentuk dasarnya:
+Bentuk dasar:
 
 ```text
 variabel = kondisi ? nilai_jika_benar : nilai_jika_salah
@@ -40,7 +41,7 @@ Contoh:
 String hasil = kondisi ? "Berhasil" : "Gagal";
 ```
 
-Secara sederhana:
+Alur:
 
 ```text
           Kondisi
@@ -54,25 +55,21 @@ Secara sederhana:
           Variabel
 ```
 
-Conditional assignment sesuai digunakan untuk kondisi sederhana yang menghasilkan sebuah nilai.
-
 ---
 
 # If-Else
 
-`if-else` digunakan untuk menentukan blok program yang akan dijalankan berdasarkan suatu kondisi.
-
-Bentuk dasar:
+`if-else` digunakan untuk menentukan blok program berdasarkan suatu kondisi.
 
 ```java
 if (kondisi) {
-    // dijalankan jika kondisi benar
+    // kondisi benar
 } else {
-    // dijalankan jika kondisi salah
+    // kondisi salah
 }
 ```
 
-Untuk lebih dari dua kondisi dapat digunakan:
+Untuk beberapa kondisi:
 
 ```java
 if (kondisi1) {
@@ -84,24 +81,11 @@ if (kondisi1) {
 }
 ```
 
-Alurnya:
-
-```text
-         Kondisi
-        /       \
-     True       False
-      |           |
-      v           v
-   Blok A       Blok B
-```
-
 ---
 
 # Nested If
 
-Nested if merupakan struktur `if` yang berada di dalam blok `if` lainnya.
-
-Contoh konsep:
+Nested if merupakan struktur `if` yang berada di dalam `if` lainnya.
 
 ```java
 if (kondisi1) {
@@ -113,30 +97,13 @@ if (kondisi1) {
 }
 ```
 
-Alur:
-
-```text
-Kondisi 1
-   |
-   +-- False --> Proses lain
-   |
-  True
-   |
-   v
-Kondisi 2
-  /    \
-True   False
-```
-
-Nested if digunakan ketika kondisi berikutnya hanya perlu diperiksa apabila kondisi sebelumnya telah terpenuhi.
+Digunakan apabila kondisi berikutnya hanya perlu diperiksa setelah kondisi sebelumnya terpenuhi.
 
 ---
 
 # Switch-Case
 
-Selain `if-else`, seleksi kondisi dapat dilakukan menggunakan `switch-case`.
-
-Bentuk dasar:
+`switch-case` digunakan untuk memilih salah satu dari beberapa kemungkinan berdasarkan sebuah nilai.
 
 ```java
 switch (pilihan) {
@@ -153,23 +120,19 @@ switch (pilihan) {
 }
 ```
 
-`switch-case` sesuai digunakan ketika terdapat beberapa pilihan berdasarkan nilai tertentu.
-
 ---
 
 ## Fungsi `break`
 
-Statement:
+`break` menghentikan eksekusi setelah suatu `case` selesai dijalankan.
 
 ```java
 break;
 ```
 
-digunakan untuk menghentikan eksekusi pada suatu `case`.
+Jika `break` tidak digunakan, eksekusi dapat berlanjut menuju `case` berikutnya.
 
-Tanpa `break`, program dapat melanjutkan menjalankan `case` berikutnya.
-
-Fenomena tersebut dikenal sebagai:
+Hal tersebut disebut:
 
 ```text
 fall-through
@@ -181,13 +144,11 @@ fall-through
 
 ## Percobaan 1 — Conditional Assignment
 
-File:
+Source code:
 
 👉 [constAss.java](./constAss.java)
 
-Percobaan ini memperkenalkan conditional assignment untuk menentukan nilai berdasarkan kondisi tertentu.
-
-Konsep utama:
+Konsep:
 
 ```text
 condition ? trueValue : falseValue
@@ -197,11 +158,11 @@ condition ? trueValue : falseValue
 
 ## Percobaan 2 — If-Else
 
-File:
+Source code:
 
 👉 [seleksi1.java](./seleksi1.java)
 
-Percobaan ini menggunakan:
+Konsep:
 
 ```text
 if
@@ -209,53 +170,30 @@ else if
 else
 ```
 
-untuk menentukan output berdasarkan nilai yang dimasukkan pengguna.
-
-Secara umum:
-
-```text
-Input Nilai
-    ↓
-Cek Kondisi
-    |
-    +--> Kondisi 1
-    |
-    +--> Kondisi 2
-    |
-    └--> Kondisi lainnya
-```
-
 ---
 
 ## Percobaan 3 — Nested If
 
-File:
+Source code:
 
 👉 [seleksi2.java](./seleksi2.java)
-
-Percobaan ini menunjukkan penggunaan percabangan di dalam percabangan lainnya.
 
 Konsep:
 
 ```text
-Kondisi Pertama
-      |
-      +--> Kondisi Kedua
-      |
-      +--> Kondisi Lain
+if
+  └── if
 ```
 
 ---
 
 ## Percobaan 4 — Switch-Case
 
-File:
+Source code:
 
 👉 [seleksi3.java](./seleksi3.java)
 
-Percobaan ini menggunakan `switch-case` untuk memilih jenis mata uang dan melakukan perhitungan berdasarkan pilihan pengguna.
-
-Konsep utama:
+Konsep:
 
 ```text
 switch
@@ -266,83 +204,23 @@ default
 
 ---
 
-# Analisis Percobaan
-
-Bagian analisis digunakan untuk mengamati perilaku program ketika source code dimodifikasi.
-
----
-
-## Conditional Assignment
-
-Analisis meliputi:
-
-```text
-perubahan tipe data
-perubahan kondisi
-validasi input
-```
-
----
-
-## If-Else
-
-Analisis dilakukan dengan memasukkan beberapa nilai untuk melihat blok kondisi yang dijalankan.
-
-```text
-Input
-  ↓
-Evaluasi Kondisi
-  ↓
-Output
-```
-
----
-
-## Nested If
-
-Analisis berfokus pada alur program ketika terdapat kondisi bertingkat.
-
-```text
-Kondisi Luar
-     ↓
-Kondisi Dalam
-     ↓
-Output
-```
-
----
-
-## Switch-Case
-
-Analisis meliputi pengaruh statement:
-
-```java
-break;
-```
-
-Apabila `break` dihilangkan, eksekusi dapat berlanjut menuju `case` berikutnya.
-
----
-
 # If-Else vs Switch-Case
 
 ## If-Else
 
-`if-else` sesuai digunakan untuk:
+Cocok untuk:
 
 ```text
 rentang nilai
 operator perbandingan
-lebih dari satu ekspresi logika
 kondisi kompleks
+beberapa ekspresi logika
 ```
 
 Contoh:
 
 ```text
 nilai >= 80
-
-umur > 17
 
 nilai >= 60 && nilai <= 100
 ```
@@ -351,7 +229,7 @@ nilai >= 60 && nilai <= 100
 
 ## Switch-Case
 
-`switch-case` sesuai digunakan ketika satu nilai dibandingkan dengan sejumlah pilihan tertentu.
+Cocok ketika satu nilai dibandingkan dengan sejumlah pilihan tertentu.
 
 Contoh:
 
@@ -363,32 +241,28 @@ Contoh:
 5
 ```
 
-Struktur program biasanya menjadi lebih mudah dibaca apabila pilihan yang tersedia bersifat tetap.
-
 ---
 
 # Tugas Praktikum
 
-Terdapat tiga tugas praktikum pada materi Seleksi Kondisi:
+Terdapat tiga tugas praktikum:
 
 ```text
-1. Perhitungan luas dan keliling bangun datar menggunakan switch-case.
-2. Menentukan kategori IMT menggunakan if-else.
-3. Menghitung total penghasilan berdasarkan jam kerja.
+1. Menghitung luas dan keliling bangun datar.
+2. Menghitung dan menentukan kategori IMT.
+3. Menghitung upah pegawai berdasarkan jam kerja.
 ```
 
-Soal lengkap tersedia pada:
+Soal dan penyelesaian:
 
 👉 [Tugas Praktikum](./Tugas-Praktikum)
-
-Penyelesaian tugas belum disertakan.
 
 ---
 
 # Struktur Folder
 
 ```text
-Modul 2/
+Bab 2/
 ├── README.md
 ├── constAss.java
 ├── seleksi1.java
@@ -396,7 +270,10 @@ Modul 2/
 ├── seleksi3.java
 │
 └── Tugas-Praktikum/
-    └── README.md
+    ├── README.md
+    ├── Tugas1.java
+    ├── Tugas2.java
+    └── Tugas3.java
 ```
 
 ---
