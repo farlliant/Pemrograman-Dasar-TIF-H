@@ -1,6 +1,6 @@
-﻿# Tugas Praktikum — Modul 1
+﻿# Tugas Praktikum — Bab 1
 
-Tugas praktikum pada Modul 1 merupakan implementasi dari materi **Program Input, Output, dan Proses** menggunakan bahasa pemrograman Java.
+Tugas praktikum pada Bab 1 merupakan implementasi dari materi **Program Input, Output, dan Proses** menggunakan bahasa pemrograman Java.
 
 Pada tugas ini digunakan beberapa konsep dasar:
 
@@ -125,7 +125,7 @@ Program kemudian menghitung biaya penggunaan listrik dan menampilkan hasil perhi
 
 # Konsep yang Digunakan
 
-Konsep utama pada tugas praktikum Modul 1:
+Konsep utama pada tugas praktikum Bab 1:
 
     Input
       ↓
@@ -149,7 +149,7 @@ Konsep utama pada tugas praktikum Modul 1:
 
 # Ringkasan
 
-Tugas praktikum Modul 1 menerapkan pola dasar pemrograman:
+Tugas praktikum Bab 1 menerapkan pola dasar pemrograman:
 
     Input
       ↓
@@ -159,4 +159,4 @@ Tugas praktikum Modul 1 menerapkan pola dasar pemrograman:
 
 Data diterima dari pengguna, disimpan ke dalam variabel, diproses menggunakan operasi yang diperlukan, kemudian hasilnya ditampilkan kembali sebagai output program.
 
-Konsep tersebut menjadi dasar untuk implementasi program yang lebih kompleks pada modul berikutnya.
+Konsep tersebut menjadi dasar untuk implementasi program yang lebih kompleks pada bab berikutnya.
