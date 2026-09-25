@@ -1,0 +1,139 @@
+# ============================================================
+# Pemrograman Dasar TIF-H
+# Git Ignore Configuration
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Java Compiled Files
+# ------------------------------------------------------------
+
+*.class
+*.jar
+*.war
+*.ear
+
+
+# ------------------------------------------------------------
+# Java Build Directories
+# ------------------------------------------------------------
+
+bin/
+out/
+build/
+target/
+
+
+# ------------------------------------------------------------
+# IDE / Editor
+# ------------------------------------------------------------
+
+# Visual Studio Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+
+# ------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+
+# ------------------------------------------------------------
+# Temporary / Backup Files
+# ------------------------------------------------------------
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.log
+
+
+# ------------------------------------------------------------
+# Environment Variables & Secrets
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+*.key
+*.pem
+*.p12
+*.pfx
+
+credentials.*
+secrets.*
+secret.*
+
+
+# ------------------------------------------------------------
+# PRIVATE PRACTIKUM MATERIAL
+# ------------------------------------------------------------
+#
+# Semua material evaluasi yang belum boleh dipublikasikan
+# disimpan pada folder _private.
+#
+# Contoh:
+#
+# _private/
+# ├── Live Coding/
+# ├── UTP/
+# ├── UAP/
+# ├── Hidden Tests/
+# ├── Bank Soal/
+# └── Rubrik/
+#
+# Folder ini TIDAK BOLEH masuk repository public.
+#
+
+/_private/
+
+
+# ------------------------------------------------------------
+# Internal Assessment Material
+# ------------------------------------------------------------
+
+/internal/
+/drafts/
+/hidden-tests/
+/bank-soal/
+/rubrik-internal/
+/solutions-private/
+
+
+# ------------------------------------------------------------
+# VPL / Autograder Internal Files
+# ------------------------------------------------------------
+
+/vpl-private/
+/testcases-private/
+
+
+# ------------------------------------------------------------
+# Local Scratch Files
+# ------------------------------------------------------------
+
+/scratch/
+/sandbox/
