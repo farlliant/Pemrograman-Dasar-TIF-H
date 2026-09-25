@@ -741,7 +741,7 @@ Susun Trace Table
 # Struktur Folder
 
 ```text
-Modul 0/
+Bab 0/
 └──  README.md
 ```
 
